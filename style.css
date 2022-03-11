@@ -1,0 +1,11 @@
+:root {
+    --primary: red;
+    --secondary: green;
+    --trim: gold;
+    --font: black;
+}
+
+html {
+    background-color: var(--primary);
+    color: var(--font);
+}
