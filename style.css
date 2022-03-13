@@ -1,11 +1,34 @@
 :root {
-    --primary: red;
-    --secondary: green;
-    --trim: gold;
+    --primary: rgba(255, 0, 0, 0.623);
+    --secondary: rgba(0, 128, 0, 0.363);
+    --trim: hwb(51 0% 0% / 0.541);
     --font: black;
 }
 
 html {
     background-color: var(--primary);
+    color: var(--font);
+}
+
+header .container {
+    text-align: center;
+}
+
+header h1 {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    font-size: 40px;
+}
+
+header .container img {
+    float: left;
+}
+footer div span {
+    display: block;
+}
+
+header nav a {
+    text-decoration: none;
     color: var(--font);
 }
