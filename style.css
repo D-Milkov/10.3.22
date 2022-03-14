@@ -1,13 +1,25 @@
 :root {
-    --primary: rgba(255, 0, 0, 0.623);
-    --secondary: rgba(0, 128, 0, 0.363);
-    --trim: hwb(51 0% 0% / 0.541);
-    --font: black;
+    --bg-primary: rgb(146, 19, 19);
+    --bg-secondary: rgb(27, 83, 27);
+    --fg-primary: blue;
+    --fg-secondary: pink;
+    --fg-tertiary: rgb(204, 144, 14);
+    --trim: orange;
+    --font-primary: black;
+    --font-secondary: darkgray;
+
+
 }
 
-html {
-    background-color: var(--primary);
-    color: var(--font);
+html, body {
+    background-color: var(--bg-primary);
+    color: var(--font-primary);
+    margin: 0;
+}
+
+header {
+    background-color: var(--bg-secondary);
+    padding: 15px;
 }
 
 header .container {
@@ -21,14 +33,44 @@ header h1 {
     font-size: 40px;
 }
 
+header nav a {
+    text-decoration: none;
+    color: var(--font-primary);
+    background-color: var(--fg-tertiary);
+    padding: 5px 10px;
+}
+
+header nav a:active {
+    background-color: var(--bg-secondary);
+
+}
+
 header .container img {
     float: left;
 }
-footer div span {
-    display: block;
+
+main {
+    padding: 15px;
 }
 
-header nav a {
-    text-decoration: none;
-    color: var(--font);
+main ul li {
+    padding-bottom: 10px;
 }
+
+main table tr td {
+    padding: 5px 5px;
+    background-color: var(--bg-secondary);
+    border: 2px solid black;
+
+}
+
+footer {
+    background-color: var(--bg-secondary);
+    padding: 15px;
+}
+
+footer div span {
+    display: block;
+    padding: 3px 0;
+}
+
