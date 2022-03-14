@@ -3,7 +3,7 @@
     --bg-secondary: rgb(27, 83, 27);
     --fg-primary: blue;
     --fg-secondary: pink;
-    --fg-tertiary: rgb(204, 144, 14);
+    --fg-tertiary: goldenrod;
     --trim: orange;
     --font-primary: black;
     --font-secondary: darkgray;
@@ -38,6 +38,7 @@ header nav a {
     color: var(--font-primary);
     background-color: var(--fg-tertiary);
     padding: 5px 10px;
+    border: 2px solid var(--bg-primary);
 }
 
 header nav a:active {
@@ -51,6 +52,10 @@ header .container img {
 
 main {
     padding: 15px;
+}
+
+img {
+    border: 2px solid  var(--fg-tertiary);
 }
 
 main ul li {
