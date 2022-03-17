@@ -1,14 +1,12 @@
 :root {
-    --bg-primary: rgb(146, 19, 19);
-    --bg-secondary: rgb(27, 83, 27);
+    --bg-primary: white;
+    --bg-secondary: lightblue;
     --fg-primary: blue;
     --fg-secondary: pink;
-    --fg-tertiary: goldenrod;
-    --trim: orange;
+    --fg-tertiary: lightpink;
     --font-primary: black;
-    --font-secondary: darkgray;
-
-
+    --font-secondary: pink;
+    font-size: 16px;
 }
 
 html, body {
@@ -20,10 +18,13 @@ html, body {
 header {
     background-color: var(--bg-secondary);
     padding: 15px;
+    text-align: center;
 }
 
-header .container {
-    text-align: center;
+#languageSelector {
+text-align: left;
+font-size: 1rem;
+
 }
 
 header h1 {
@@ -37,12 +38,18 @@ header nav a {
     text-decoration: none;
     color: var(--font-primary);
     background-color: var(--fg-tertiary);
-    padding: 5px 10px;
-    border: 2px solid var(--bg-primary);
+    padding: 3px 3px;
+    border: 1px solid var(--bg-primary);
 }
 
 header nav a:active {
-    background-color: var(--bg-secondary);
+    background-color: var(--font-primary);
+
+}
+
+header input {
+    padding: 3px 7px;
+    border: 1px solid var(--font-primary);
 
 }
 
@@ -50,12 +57,20 @@ header .container img {
     float: left;
 }
 
-main {
-    padding: 15px;
+body > div {
+    display :flex;
 }
 
-img {
-    border: 2px solid  var(--fg-tertiary);
+#FilterContainer {
+    width: 100px;
+    min-width: 100px;
+    background-color: var(--bg-secondary);
+    text-align: center;
+    color: var(--font-primary);
+}
+
+main {
+    padding: 15px;
 }
 
 main ul li {
@@ -66,7 +81,10 @@ main table tr td {
     padding: 5px 5px;
     background-color: var(--bg-secondary);
     border: 2px solid black;
+}
 
+#logintext {
+text-align: center;
 }
 
 footer {
@@ -78,4 +96,6 @@ footer div span {
     display: block;
     padding: 3px 0;
 }
+
+
 
