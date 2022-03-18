@@ -2,10 +2,10 @@
     --bg-primary: white;
     --bg-secondary: lightblue;
     --fg-primary: blue;
-    --fg-secondary: pink;
+    --fg-secondary: yellow;
     --fg-tertiary: lightpink;
     --font-primary: black;
-    --font-secondary: pink;
+    --font-secondary: red;
     font-size: 16px;
 }
 
@@ -21,10 +21,13 @@ header {
     text-align: center;
 }
 
+header br {
+    margin: 0rem;
+}
+
 #languageSelector {
 text-align: left;
 font-size: 1rem;
-
 }
 
 header h1 {
@@ -50,6 +53,7 @@ header nav a:active {
 header input {
     padding: 3px 7px;
     border: 1px solid var(--font-primary);
+    margin: 15px 0px;
 
 }
 
