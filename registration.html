@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css"/>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sales shop</title>
 </head>
+
 <body>
     <header>
         <form id="languageSelector">
             <label for="english">
-                <input type="radio" name="language" id="english" value="EN"/>
+                <input type="radio" name="language" id="english" value="EN" />
                 EN
             </label>
             <br>
             <label for="bulgarian">
-                <input type="radio" name="language" id="bulgarian" value="BG"/>
+                <input type="radio" name="language" id="bulgarian" value="BG" />
                 BG
             </label>
         </form>
-            <h1>Sales Shop</h1>
+        <h1>Sales Shop</h1>
         </div>
         <nav>
             <a href="index.html">Home</a>
@@ -33,29 +35,42 @@
         <input type="text" />
         <button>search</button>
     </header>
-        <main>
-            <div id=logintext>
-            <h1>Registration</h1>
-            <p>Name</p>
-            <input type="text" />
-            <p>Last name</p>
-            <input type="text" />
-            <p>Date of birth</p>
-            <input type="text" />
-            <input type="text" />
-            <br>
-            <br>
-            <input type="text" />
-            <p>Password</p>
-            <input type="text" />
-            <p>Confirm Password</p>
-            <input type="text" />
-            <p>e-mail addres</p>
-            <input type="text" />
-            <br>
-            <button>Register</button>
-        </div>
-        </main>
+    <main>
+        <form id="registration">
+                <h1>Registration</h1>
+<!--TODO NAME AND ID FOR ALL INPUTS-->
+                <label for="registrationName">
+                    Name
+                    <input type="text" required/>
+                </label>
+                <label for="registrationLastName">
+                    Last name
+                    <input id="registrationLastName" name="registrationLastName" type="text" />
+                </label>
+                <label for="dateOfBirth">
+                    Date of birth
+                    <input type="date" name="dateOfBrth" id="">
+                </label>
+                <label for="password">
+                    Password
+                    <input type="password" />
+                </label>
+                <label for="confirmPassword">
+                    Confirm Password
+                    <input type="password" />
+                </label>
+                <label for="emailAddres">
+                    e-mail addres
+                    <input type="email" />
+                </label>
+                <label for="termsAndConditions">
+                    <input type="checkbox" id="termsAndConditions" name="termsAndConditions">
+                    Terms and conditions
+                </label>
+                <br>
+                <button>Register</button>
+        </form>
+    </main>
     </div>
 
     <footer>
@@ -67,4 +82,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -1,3 +1,5 @@
+@import "headerstyle.css";
+
 :root {
     --bg-primary: white;
     --bg-secondary: lightblue;
@@ -25,51 +27,7 @@ button:active {
     background-color: var(--bg-secondary);
 }
 
-header {
-    background-color: var(--bg-secondary);
-    padding: 15px;
-    text-align: center;
-}
 
-header br {
-    margin: 0rem;
-}
-
-#languageSelector {
-text-align: left;
-font-size: 1rem;
-}
-
-header h1 {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    font-size: 40px;
-}
-
-header nav a {
-    text-decoration: none;
-    color: var(--font-primary);
-    background-color: var(--fg-tertiary);
-    padding: 3px 3px;
-    border: 1px solid var(--bg-primary);
-}
-
-header nav a:active {
-    background-color: var(--bg-secondary);
-
-}
-
-header input {
-    padding: 3px 7px;
-    border: 1px solid var(--font-primary);
-    margin: 15px 0px;
-
-}
-
-header .container img {
-    float: left;
-}
 
 body > div {
     display :flex;

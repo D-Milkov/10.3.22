@@ -1,0 +1,59 @@
+@import "headerstyle.css";
+@import "mainstlye.css";
+
+:root {
+    --bg-primary: white;
+    --bg-secondary: lightblue;
+    --fg-primary: blue;
+    --fg-secondary: yellow;
+    --fg-tertiary: lightpink;
+    --font-primary: black;
+    --font-secondary: red;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: var(--bg-primary);
+    color: var(--font-primary);
+    margin: 0;
+}
+
+button {
+    background-color: var(--fg-tertiary);
+    margin: 5px;
+    border: 1px solid var(--font-primary);
+}
+
+button:active {
+    background-color: var(--bg-secondary);
+}
+
+
+
+body > div {
+    display :flex;
+}
+
+#FilterContainer {
+    width: 100px;
+    min-width: 100px;
+    background-color: var(--bg-secondary);
+    text-align: center;
+    color: var(--font-primary);
+}
+
+
+
+footer {
+    background-color: var(--bg-secondary);
+    padding: 15px;
+}
+
+footer div span {
+    display: block;
+    padding: 3px 0;
+}
+
+
+
