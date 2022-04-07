@@ -1,72 +1,27 @@
 header {
     background-color: var(--bg-secondary);
-    padding: 1rem;
+    padding: 10px;
     text-align: center;
+    position: fixed;
+    width: calc(100% - 20px);
+    max-width: 100%;
 }
 
-#languageSelector,
-#dropDownLanguageSelector {
-    display: inline-block;
-    width: calc(50% - 1rem);
+.headerItemLeft{
+    float: left;
+    border: none;
 }
 
-#dropDownLanguage {
-    font-size: 1.5rem;
+.headerItemRight{
+    float: right;
 }
 
-#dropDownLanguage >option {
-    font-size: 1.5rem;
+.menuOption{
+    display: none;
+    font-size: 1rem;
+    color: pink;
 }
 
-#dropDownLanguageSelector {
-    text-align: right;
-    vertical-align: top;
-}
-
-#languageSelector {
-    text-align: left;
-    font-size: 1.5rem;
-}
-
-header br {
-    margin: 0rem;
-}
-
-#languageSelector {
-    text-align: left;
-}
-
-header h1 {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    font-size: 40px;
-}
-
-header nav a {
-    text-decoration: none;
-    color: var(--font-primary);
-    background-color: var(--fg-tertiary);
-    padding: 0.675rem;
-    border: 1px solid var(--bg-primary);
-    font-size: 1.5rem;
-    display: inline-block;
-    margin: 0.1rem;
-}
-
-header nav a:active {
-    background-color: var(--bg-secondary);
-}
-
-#formsearch input,
-#formsearch button{
-    font-size: 2rem;
-    max-width: calc(100% - 2 * 1rem);
-    border-radius: 0.675rem;
-}
-
-header input {
-    padding: 3px 7px;
-    border: 1px solid var(--font-primary);
-    margin: 15px 0px;
+div .menuOption:hover span {
+    display: inline;
 }

@@ -28,11 +28,10 @@
                     language Selector
                     <select name="dropDownLanguage" id="dropDownLanguage">
                         <option value="EN">EN</option>
-                        <option value="BG">BG</option>
+                        <option value="BG" selected >BG</option>
                     </select>
                 </label>
             </form>
-            <h1 style="font-size: 8rem;">TEST</h1>
         </div>
         <nav>
             <a href="index.html">Home</a>
@@ -47,14 +46,6 @@
             <button>search</button>
         </form>
     </header>
-    <div>
-        <div id="FilterContainer">
-            <p>white</p>
-            <p>Black</p>
-            <p>Blue</p>
-            <p>Green</p>
-            <p>search</p>
-        </div>
         <main>
             <style>
                 main {
@@ -64,7 +55,66 @@
                     background-attachment: fixed;
                     background-size: cover;
                 }
+                #polo {
+                    background-repeat: no-repeat
+                }
+                aside {
+            top: 50%;
+            right: 0;
+            position: fixed;
+          }
+          aside .aside-bar-right {
+            display: flex;
+            align-items: right;
+
+            /* display: block; */
+            /* text-align: right; */
+            margin: 4px;
+            text-decoration: none;
+            font-size: 1.5rem;
+          }
+          aside .aside-bar-right span {
+            display: none;
+            background-color: var(--bg-secondary);
+            padding: 0 10px;
+          }
+          aside .aside-bar-right:hover span {
+            display: inline;
+          }
+          aside a {
+              justify-content: flex-end;
+          }
+
             </style>
+             <aside>
+                <a href="#" class="aside-bar-right">
+                  <span>go ontop</span>
+                  <img
+                    src="images/up.png"
+                    alt="one"
+                    width="30px"
+                    height="30px"
+                  />
+                </a>
+                <a href="#lastP" class="aside-bar-right">
+                  <span>mid</span>
+                  <img
+                    src="images/mid.png"
+                    alt="one"
+                    width="30px"
+                    height="30px"
+                  />
+                </a>
+                <a href="#footer" class="aside-bar-right">
+                  <span>go bottom</span>
+                  <img
+                    src="images/down.png"
+                    alt="one"
+                    width="30px"
+                    height="30px"
+                  />
+                </a>
+              </aside>
             <h1><mark style="color:var(--bg-primary);"> Sh</mark>op <mark>Ho</mark>me</h1>
             <img src="./images/sales.jpg" width="150" height="150" alt="site logo sales" />
             <h2>Sales Shop</h2>
@@ -73,13 +123,13 @@
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsq3ykII9o3zCE_VYyjfxuvr7jkpxBYDEx2w&usqp=CAU);">
+            <p id="polo" style="background-repeat: no-repeat; background-size: 100%; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsq3ykII9o3zCE_VYyjfxuvr7jkpxBYDEx2w&usqp=CAU);">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <p id="lastP" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                 ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
@@ -87,7 +137,7 @@
         </main>
     </div>
 
-    <footer>
+    <footer id="footer">
         <div>
             <address>
                 <!--just checking-->
