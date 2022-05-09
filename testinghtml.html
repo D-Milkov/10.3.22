@@ -78,6 +78,107 @@
                 lorem ipusm dolor sit amet
             </div>
         </div>
+        <div class="slider-on-off-container" style="margin: 50px;">
+
+            <style>
+            .slider-on-off input{
+                display: none;
+                
+            }
+            .slider-on-off > div{
+                box-sizing: border-box;
+                width: 6rem;
+                height: 3rem;
+                background-color: grey;
+                border-radius: 1.5rem;
+                padding: 0.5rem;
+                transition: 5s;
+            }
+            .slider-on-off > div div{
+                width: 2rem;
+                height: 2rem;
+                background-color: white;
+                border-radius: 50%;transition: 2s;
+            }
+
+            .slider-on-off input:checked + div{
+                background-color: blue;
+                transition: 5s;
+            }
+            
+            .slider-on-off input:checked+div>div{
+                margin-left: auto;
+                transition: 2s;
+            }
+            .slider-on-off div {
+                transition-property:all 5s;
+            }
+
+            </style>
+
+            <label class="slider-on-off">
+                <input type="checkbox">
+                <div>
+                    <div></div>
+                </div>
+            </label>
+
+        </div>
+        
+
+        
+        
+        <div class="checkbox-hack-container">
+            <style>
+                .hack-input,
+                .hack-content {
+                    display: none;
+                }
+                .hack-input:checked + .hack-content {
+                    display: block;
+                }
+                
+                label[for=hamburger-menu] {
+                    --hamburger-size: 30px;
+                    --line-color: black;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: var(--hamburger-size);
+                    height: var(--hamburger-size);
+                }
+                label[for=hamburger-menu] > div {
+                    height: 26%;
+                    background-color: var(--line-color);
+                    border-radius: 1rem;
+                }
+            </style>
+            <label
+                style="--hamburger-size: 100px"
+                for="hamburger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input
+                type="checkbox"
+                name="hamburger"
+                id="hamburger-menu"
+                class="hack-input" />
+            <div class="hack-content">lorem ipusm dolor sit amet
+                lorem ipusm dolor sit amet
+                lorem ipusm dolor sit amet
+                lorem ipusm dolor sit amet
+                lorem ipusm dolor sit amet
+                lorem ipusm dolor sit amet
+                lorem ipusm dolor sit amet
+                lorem ipusm dolor sit amet
+                lorem ipusm dolor sit amet
+                lorem ipusm dolor sit amet
+                lorem ipusm dolor sit amet
+                lorem ipusm dolor sit amet
+            </div>
+        </div>
         <style>
             main {
                 padding-top: 200px;
@@ -120,7 +221,7 @@
             }
 
             aside a {
-                justify-content: flex-end;
+                justify-content: end;
             }
         </style>
         <aside>

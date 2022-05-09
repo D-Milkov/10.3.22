@@ -1,50 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="css/style.css"/>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sales shop</title>
 </head>
+
 <body>
     <header>
-        <form id="languageSelector">
-            <label for="english">
-                <input type="radio" name="language" id="english" value="EN"/>
-                EN
-            </label>
-            <br>
-            <label for="bulgarian">
-                <input type="radio" name="language" id="bulgarian" value="BG"/>
-                BG
-            </label>
-        </form>
-            <h1>Sales Shop</h1>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="sales1.html">sales1</a>
-            <a href="sales2.html">sales2</a>
-            <a href="sales3.html">sales3</a>
-            <a href="login.html">Log in</a>
-            <a href="registration.html">Registration</a>
-        </nav>
-        <input type="text" />
-        <button>search</button>
     </header>
-        <main>
-            <div id=logintext>
-            <h1>Log in</h1>
-            <p>Log in name</p>
-            <input type="text" placeholder="Log-in name here"/>
-            <p>Password</p>
-            <input type="text" />
-            <br>
-            <button onclick="refresh">LOG IN</button>
-            <p>Forgot my Password</p>
-        </div>
-        </main>
+    <main>
+        <form id="login">
+                <h1>LOG IN</h1>
+<!--TODO NAME AND ID FOR ALL INPUTS-->
+                <label for="loginUsermane">
+                    Username
+                    <input type="text" required/>
+                </label>
+                <label for="loginpassword">
+                    Password
+                    <input type="password" required/>
+                </label>
+                <label for="Rememberme">
+                    <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required/>
+                    Remember me
+                </label>
+                <br>
+                <button>LOG IN</button>
+        </form>
+    </main>
     </div>
 
     <footer>
@@ -56,4 +43,5 @@
         </div>
     </footer>
 </body>
+
 </html>
