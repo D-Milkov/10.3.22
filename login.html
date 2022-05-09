@@ -8,24 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sales shop</title>
 </head>
-
+<!--git add . , git commit -m "message"  ,  git push-->
 <body>
     <header>
     </header>
     <main>
         <form id="login">
-                <h1>LOG IN</h1>
-<!--TODO NAME AND ID FOR ALL INPUTS-->
+                <h1 style="margin-bottom: 140px;">LOG IN</h1>
+<!--TODO NAME AND ID FOR ALL INPUTS -- done!-->
                 <label for="loginUsermane">
                     Username
-                    <input type="text" required/>
+                    <input type="text" id="loginUsermane" name="loginUsermane" required/>
                 </label>
                 <label for="loginpassword">
                     Password
-                    <input type="password" required/>
+                    <input type="password" id="loginpassword" name="loginpassword" required/>
                 </label>
                 <label for="Rememberme">
-                    <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required/>
+                    <input 
+                    style="margin-bottom: 140px;"
+                    type="checkbox" id="Rememberme" name="Rememberme" required/>
                     Remember me
                 </label>
                 <br>
