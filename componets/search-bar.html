@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH BAR Component</title>
+</head>
+<body>
+    <style>
+        /* component variables */
+        :root {
+
+        }
+
+        /* component styles */
+        .spyglass {
+            position: relative;
+        }
+        .spyglass .circle {
+            border: 5px solid black;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+        .spyglass .handle {
+            background-color:black;
+            width: 50px;
+            height: 5px;
+            transform: rotate(45deg) translate(31px , -26px);
+        }
+
+    </style>
+    <!-- component structure -->
+    <div class="container">
+        <div class="spyglass">
+            <div class="circle"></div>
+            <div class="handle"></div>
+        </div>
+    </div>
+</body>
+</html>

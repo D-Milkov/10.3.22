@@ -1,0 +1,37 @@
+<style>
+            .slider-on-off input{
+                display: none;
+            }
+            .slider-on-off > div{
+                box-sizing: border-box;
+                width: 6rem;
+                height: 3rem;
+                background-color: grey;
+                border-radius: 1.5rem;
+                padding: 0.5rem;
+                transition: background-color 0.5s;
+            }
+            .slider-on-off > div div{
+                width: 2rem;
+                height: 2rem;
+                background-color: white;
+                border-radius:  50%;
+                transition: margin-left 0.5s;
+            }
+
+            .slider-on-off input:checked + div{
+                background-color: blue;
+            }
+            
+            .slider-on-off input:checked+div div{
+                margin-left: auto;
+            }
+
+            </style>
+
+            <label class="slider-on-off">
+                <input type="checkbox">
+                <div>
+                    <div></div>
+                </div>
+            </label>

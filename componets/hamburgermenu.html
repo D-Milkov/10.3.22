@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Component</title>
+</head>
+<body>
+    <style>
+        /* component variables */
+        :root {
+            --hamburger-button-size: 10rem;
+            --hamburger-button-color: black;
+        }
+
+        /* component styles */
+        #hamburgerButton {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: var(--hamburger-button-size);
+            width: var(--hamburger-button-size);
+        }
+
+        #hamburgerButton > div {
+            background-color: var(--hamburger-button-color);
+            height: calc(var(--hamburger-button-size) / 4);
+            width: 100%;
+        }
+
+        #hamburgerCheckbox,
+        #hamburgerContent {
+            display: none;
+        }
+
+        #hamburgerCheckbox:checked + #hamburgerContent {
+            display: block;
+        }
+
+    </style>
+    <!-- component structure -->
+    <div id="hamburgerContainer">
+        <label  for="hamburgerCheckbox" id="hamburgerButton" >
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <input type="checkbox" id="hamburgerCheckbox">
+        <div id="hamburgerContent">
+            <!-- content goes here -->
+        </div>
+    </div>
+</body>
+</html>
